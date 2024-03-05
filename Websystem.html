@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Static Webpage</title>
+<style>
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		font-family: "Poppins", sans-serif
+	}
+	body {
+		font-size: 30pt
+	}
+	main {
+		background: linear-gradient(to right, #ff6b6b, #ffb8b8);
+	}
+	.header-container h1 {
+		font-family: "Arial"
+	}
+	.paragraph-container,
+	.motto-container {
+		font-family: "Calibri";
+		font-style: italic;
+	}
+
+	.main-container {
+		width: 1400px;
+		height: 100vh;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: linear-gradient(to right, #ff6b6b, #ffb8b8);
+		}
+	.image {
+		width: 40%;
+		cursor: pointer;
+		transition: 0.3s ease;
+	}
+	.image:hover {
+		transform: scale(1.1);
+	}
+	.content-container {
+		display: flex;
+		background: linear-gradient(to right, #ff9a9e, #fecfef);
+		border-radius: 10px;
+	}
+	.header-container,
+	.paragraph-container,
+	.motto-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 3px solid transparent;
+		padding: 10px;
+		text-align: center;
+		margin: 25px 10px;
+		cursor: pointer;
+		transition: 0.3s ease;
+		border-radius: 10px;
+	}
+	.header-container:hover,
+	.paragraph-container:hover,
+	.motto-container:hover {
+		transform: translateY(-10%);
+		border-color: #ff6b6b;
+	}
+</style>
+</head>
+<body>
+	<main>
+		<div class="main-container">
+			<div class="content-container">
+				<img src="Profile.jpg" alt="Image" class="image">
+				<div class="text-container">
+					<div class="header-container">
+						<h1>Georgee O. Minguito</h1>
+					</div>
+					<div class="paragraph-container">
+						<p>I am Georgee Minguito, currently a student in USTP</p>
+					</div>
+					<div class="paragraph-container">
+						<p>I've always been indecisive when it comes to my career, but now, I will be committing myself to becoming a web developer.</p>
+					</div>
+					<div class="motto-container">
+						<p>Just texts kay wala nakoy mahuna-hunaan na ibutang. Pa char2 lang hehe</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
